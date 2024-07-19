@@ -1,0 +1,11 @@
+@import url(./styles/header.css);
+
+:root{
+    --cor-background:#EBECEE;
+    --cor-branca: #FFFFFF;
+    --background-sections-azul: #326589;
+}
+
+body{
+    background-color: var(--cor-background);
+}

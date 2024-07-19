@@ -1,0 +1,28 @@
+
+.cabecalho__menuHamburgue{
+    width: 2.25rem;
+    height: 1.5rem;
+    background-image: url(../img/Menu.svg);
+    display: inline-block;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-branca);
+}
+
+.cabecalho__itensEsquerda{
+    gap: 1.5rem;
+}
+
+.cabecalho__itensDireita{
+    gap: 1.25rem;
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+    margin: 16px 24px;
+}
