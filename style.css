@@ -1,11 +1,14 @@
 @import url(./styles/header.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root{
     --cor-background:#EBECEE;
     --cor-branca: #FFFFFF;
     --background-sections-azul: #326589;
 }
-
 body{
     background-color: var(--cor-background);
 }
+
+
+

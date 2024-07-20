@@ -1,28 +1,63 @@
+:root{
+    --cor--backgroudHeader:#FFFFFF;
+    --cor--tituloListaMenu: #EB9B00;
+}
 
-.cabecalho__menuHamburgue{
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor--backgroudHeader);
+    position: relative;
+}
+
+.header__conteiner{
+    display: flex;
+    align-items: center;
+    margin: 16px 24px;
+    gap: 1.5rem;
+}
+
+.header__menuHamburgue{
     width: 2.25rem;
     height: 1.5rem;
     background-image: url(../img/Menu.svg);
     display: inline-block;
 }
 
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--cor-branca);
+.header__conteiner__menuLista{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: var(--cor--backgroudHeader);
 }
 
-.cabecalho__itensEsquerda{
-    gap: 1.5rem;
+.header__conteiner__buttonMenu:checked~.header__conteiner__menuLista{
+    display: block;
 }
 
-.cabecalho__itensDireita{
-    gap: 1.25rem;
+.header__conteiner__menuLista__titulo{
+    padding: 24px 184px 0   px 24px;
 }
 
-.conteiner{
-    display: flex;
-    align-items: center;
-    margin: 16px 24px;
+
+.header__conteiner__menuLista__titulo__texto{
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--cor--tituloListaMenu);
+}
+
+.header__conteiner__menuLista__itens{
+    padding: 24px 0px 16px 24px;
+}
+
+.header__conteiner__menuLista__itens__lista{
+    padding-bottom: 16px;
+}
+
+.header__conteiner__menuLista__itens__lista__link{
+    font-family: Poppins;
+    font-size: 1rem;
+    text-decoration: none;
+    list-style: none;
 }
