@@ -1,12 +1,7 @@
-:root{
-    --cor--backgroudHeader:#FFFFFF;
-    --cor--tituloListaMenu: #EB9B00;
-}
-
 .header{
     display: flex;
     justify-content: space-between;
-    background-color: var(--cor--backgroudHeader);
+    background-color: var(--cor-branca);
     position: relative;
 }
 
@@ -27,37 +22,34 @@
 .header__conteiner__menuLista{
     display: none;
     position: absolute;
+    left: 0;
     top: 100%;
-    background-color: var(--cor--backgroudHeader);
+    width: 60vw;
+    background-color: var(--cor-branca);
+}
+.header__conteiner__buttonMenu{
+    display: none;
 }
 
 .header__conteiner__buttonMenu:checked~.header__conteiner__menuLista{
     display: block;
 }
 
+
+.header__conteiner__menuLista__titulo, .header__conteiner__menuLista__itens{
+    padding: 1rem;
+}
+
 .header__conteiner__menuLista__titulo{
-    padding: 24px 184px 0   px 24px;
-}
-
-
-.header__conteiner__menuLista__titulo__texto{
-    font-family: Poppins;
-    font-size: 1rem;
+    color: var(--cor-laranja);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
     font-weight: 700;
-    color: var(--cor--tituloListaMenu);
 }
 
-.header__conteiner__menuLista__itens{
-    padding: 24px 0px 16px 24px;
-}
-
-.header__conteiner__menuLista__itens__lista{
-    padding-bottom: 16px;
-}
-
-.header__conteiner__menuLista__itens__lista__link{
-    font-family: Poppins;
-    font-size: 1rem;
+.header__conteiner__menuLista__itens__link{
     text-decoration: none;
-    list-style: none;
+    color: var(--cor-azul);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
 }
