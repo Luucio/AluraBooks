@@ -43,7 +43,7 @@
 .header__conteiner__menuLista__titulo{
     color: var(--cor-laranja);
     font-family: var(--fonte-principal);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -52,4 +52,10 @@
     color: var(--cor-azul);
     font-family: var(--fonte-principal);
     font-size: 16px;
+}
+
+.logo{
+    display: flex;
+    box-sizing: border-box;
+    width: 100px;
 }
